@@ -6,7 +6,6 @@ com/genial/demo/entity/Product.class
 com/genial/demo/repositories/ProductRepository.class
 com/genial/demo/DTO/ProductDto.class
 com/genial/demo/LoginFilter.class
-com/genial/demo/DemoApplication$1.class
 com/genial/demo/services/StorageService.class
 com/genial/demo/entity/User.class
 com/genial/demo/DTO/UserDto.class
