@@ -33,6 +33,11 @@ public class StorageController {
     public StorageDto getByName(@Param("name") String name){
         return service.findByName(name);
     }
+    
+    @GetMapping("/{name}")
+    public Storage getByProduct(@PathVariable String name) {
+      return service.findByProduct(name);
+    }
 
     @GetMapping
     public List<StorageDto> findAll() {

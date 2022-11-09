@@ -47,6 +47,11 @@ public class StorageService {
         
     }
 
+    public Storage findByProduct(String Name){
+        Storage storage = repository.findByName(Name);
+        return storage;
+    }
+
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
     public StorageDto save(Storage dto){
         Storage storage = new Storage();

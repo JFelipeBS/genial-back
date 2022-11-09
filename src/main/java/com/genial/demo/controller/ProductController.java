@@ -1,5 +1,7 @@
 package com.genial.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
@@ -32,10 +34,10 @@ public class ProductController {
         return service.findByName(name);
     }
 
-    //@GetMapping
-    //public List<ProductDto> findAll() {
-    //    return service.findAll();
-    //}
+    @GetMapping("/{name}")
+    public List<ProductDto> findAll(@PathVariable String name) {
+      return service.findAll(name);
+    }
 
    @PostMapping
     public ResponseEntity<ProductDto> save(@RequestBody Product dto){
