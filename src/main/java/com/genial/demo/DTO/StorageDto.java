@@ -1,5 +1,7 @@
 package com.genial.demo.DTO;
 
+import java.util.Date;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,5 +13,7 @@ public class StorageDto {
     private UserDto user;
     private String name;
     private String description;
+    private String image;
+    private Date date;
 
 }

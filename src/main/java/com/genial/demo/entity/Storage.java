@@ -1,6 +1,8 @@
 package com.genial.demo.entity;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -37,6 +39,15 @@ public class Storage {
     private String name;
 
     private String description;
+    private String image;
+    private Date date;
+
+    public Storage(){
+        GregorianCalendar gc=new GregorianCalendar(); 
+        date =gc.getTime(); 
+        gc.setTime(date);
+    }
+
 
     
 
